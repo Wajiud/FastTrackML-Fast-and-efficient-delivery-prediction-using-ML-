@@ -17,3 +17,30 @@ Clone this repository and install dependencies:
 git clone https://github.com/your-username/LogiPredict-ML.git
 cd LogiPredict-ML
 pip install -r requirements.txt
+
+
+📌 1. main.py (Main Python Code)
+import pandas as pd
+import joblib
+
+# Load Trained Model
+model = joblib.load("model.joblib")
+
+# Sample Input Data
+sample_data = [[500, 10, 20]]  # Distance_KM, Estimated_Delivery_Time, Fuel_Consumption
+
+# Make Prediction
+prediction = model.predict(sample_data)
+print(f"Predicted Delivery Time: {prediction[0]} hours")
+
+📌 2. requirements.txt (Required Python Libraries)
+pandas
+numpy
+scikit-learn
+networkx
+flask
+joblib
+boto3
+seaborn
+matplotlib
+
